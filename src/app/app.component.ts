@@ -1,14 +1,34 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { CardComponent } from './components/card/card.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent],
+  imports: [RouterOutlet, HeaderComponent, SidebarComponent, CardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'finance-dashboard';
+
+  public cardType: any;
+  public cardChip: any;
+  public bitcoinCardType: any;
+
+  constructor() {}
+
+  ngOnInit(): void {
+    this.getImages("VISA")
+  }
+
+  getImages(type: string) {
+    if (type == "VISA") {
+      this.bitcoinCardType = 'assets/images/BTC.png';  
+      this.cardType = "assets/images/visa.png";
+      this.cardChip = "assets/images/card chip.png";
+  }
+}
 }

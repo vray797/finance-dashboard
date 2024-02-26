@@ -9,4 +9,15 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
 
+  private isVisited: boolean = false
+
+  constructor() {}
+
+  checkVisited() {
+    this.isVisited = !this.isVisited;
+    const ele =  document.getElementById('link');
+    ele?.classList.toggle('active')
+
+  }
+
 }

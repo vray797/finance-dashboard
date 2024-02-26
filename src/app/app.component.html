@@ -1,2 +1,16 @@
 <app-header></app-header>
+<main>
+    <app-sidebar></app-sidebar>
+    <section class="middle">
+        <div class="header">
+            <h1>Overview</h1>
+            <input type="date" name="" id="">
+        </div>
+        <div class="cards">
+            <app-card [type]="'Visa'"></app-card>
+            <app-card [type]="'MS'"></app-card>
+            <app-card [type]="'Visa-eth'"></app-card>
+        </div>
+    </section>
+</main>
 <router-outlet />

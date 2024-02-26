@@ -1,0 +1,82 @@
+.card {
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    color: white;
+    height: 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: all 200ms ease;
+    min-width: 22rem;
+}
+
+.card:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.card .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .top .left {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card .top .left h2 {
+    font-weight: 200;
+    font-size: 1.4rem;
+}
+
+.card .top .left img {
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 1px solid white;
+    border-radius: var(--border-radius-2);
+    padding: 0.4rem;
+}
+
+.card .top .right img {
+    width: 3.5rem;
+}
+
+.card .middle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .middle .chip {
+    width: 3.5rem;
+}
+
+.card .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card .bottom .right {
+    display: flex;
+    gap: 2rem;
+}
+
+.card-color-visa {
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(253, 117, 110, 0.963),
+        rgba(237, 64, 6, 0.83)
+    );
+}
+
+.card-color-ms {
+    background: linear-gradient(#7f8191, #27282f);
+}
+
+.card-color-eth {
+    background: linear-gradient(#5d70ff, #5719c2);
+}

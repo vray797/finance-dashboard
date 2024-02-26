@@ -1,5 +1,5 @@
 nav {
-    width: 100vh;
+    width: 100vw;
     background: var(--color-white);
     padding: 1rem 0;
 }
@@ -13,7 +13,7 @@ nav .container {
     margin: 0 auto;
 }
 
-nav img .logo {
+nav img.logo {
     width: 7rem;
 }
 
@@ -56,7 +56,7 @@ nav .profile-area .theme-btn {
     cursor: pointer;
 }
 
-nav .profile-area button #menu-btn {
+nav .profile-area button#menu-btn {
     display: none;
 }
 
@@ -65,7 +65,7 @@ nav .profile-area .theme-btn span {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     font-size: 1.5rem;
 }
 
@@ -87,4 +87,22 @@ nav .profile-area .profile .profile-photo {
     height: 3rem;
     border-radius: 50%;
     overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    nav .search-bar {
+        display: none;
+    }
+
+    nav .profile-area {
+        gap: 2rem;
+    }
+
+    nav .profile-area button#menu-btn {
+        display: inline;
+        background: transparent;
+        color: var(--color-dark);
+    }
+
+
 }
