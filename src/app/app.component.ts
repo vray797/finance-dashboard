@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { CardComponent } from './components/card/card.component';
+import { MonthlyReportComponent } from './components/monthly-report/monthly-report.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, SidebarComponent, CardComponent],
+  imports: [RouterOutlet, HeaderComponent, SidebarComponent, CardComponent, MonthlyReportComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
