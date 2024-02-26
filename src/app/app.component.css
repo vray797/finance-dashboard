@@ -5,3 +5,23 @@ main {
     width: 96%;
     margin: 1rem auto 4rem;
 }
+
+main section.middle .header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+main section.middle .header input[type='date'] {
+    padding: 0.5rem 2rem;
+    border-radius: var(--border-radius-2);
+    background-color: var(--color-white);
+    color: var(--color-gray-dark);
+}
+
+main section.middle .cards {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
