@@ -5,11 +5,12 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { CardComponent } from './components/card/card.component';
 import { MonthlyReportComponent } from './components/monthly-report/monthly-report.component';
 import { FastPaymentComponent } from './components/fast-payment/fast-payment.component';
+import { InvestmentsComponent } from './components/investments/investments.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, SidebarComponent, CardComponent, MonthlyReportComponent, FastPaymentComponent],
+  imports: [RouterOutlet, HeaderComponent, SidebarComponent, CardComponent, MonthlyReportComponent, FastPaymentComponent, InvestmentsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

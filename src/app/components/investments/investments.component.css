@@ -1,0 +1,38 @@
+section.right .investments {
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+}
+
+section.right .investments img {
+    width: 2.4rem;
+}
+
+section.right .investments .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--card-padding);
+    padding-bottom: 0;
+}
+
+section.right .investments .header a {
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+section.right .investments .investment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--card-padding);
+    border-bottom: 1px solid var(--color-light);
+    transition: all 300ms ease;
+}
+
+section.right .investments .investment:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    background: var(--color-white)
+    
+}
