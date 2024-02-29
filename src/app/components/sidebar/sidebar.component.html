@@ -4,12 +4,12 @@
     </button>
 
     <div class="sidebar">
-        <a href="" class="active">
+        <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
             <span class="material-icons-sharp">dashboard</span>
             <h4>Dashboard</h4>
         </a>
 
-        <a>
+        <a routerLink="/exchange" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
             <span class="material-icons-sharp">currency_exchange</span>
             <h4>Exchange</h4>
         </a>
