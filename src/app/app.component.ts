@@ -6,11 +6,12 @@ import { CardComponent } from './components/card/card.component';
 import { MonthlyReportComponent } from './components/monthly-report/monthly-report.component';
 import { FastPaymentComponent } from './components/fast-payment/fast-payment.component';
 import { InvestmentsComponent } from './components/investments/investments.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, SidebarComponent, CardComponent, MonthlyReportComponent, FastPaymentComponent, InvestmentsComponent],
+  imports: [RouterOutlet, DashboardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
